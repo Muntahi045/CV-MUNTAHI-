@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cv Muntahi </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+<body>
+<header>
+</header>
+<div class="profile">
+<img src="g.jpg">
+</div>
+
+<div class="profile-info">
+<h1>Muntahi</h1>
+<p class="about">    20-year-old web developer  </p>
+
+
+
+
+
+<div class="sosh">
+<a href="https://www.facebook.com/profile.php?id=100093638573701&mibextid=ZbWKwL" ><img src="facebook.png"></a>
+<a href="https://www.instagram.com/x_xx2r?igsh=azQzNGlmOTJkdTV5" ><img src="instagram.png"></a>
+<a href="https://t.me/O7ZXZ" ><img src="telegram.png"></a>
+<!-- <img src="linkedin.png">-->
+<a class="i" href="https://muntahi045.github.io/Muntahi-web-/"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
+</div>
+
+
+
+<h2>Services </h2>
+<diiv class="sevices">
+<img class="se" src="service.jpg">
+<p><b>WEB D/D</b></p>
+<small>
+   Muntahi is web Desining & Devolper front-end
+</small>
+</diiv>
+
+
+<diiv class="sevices">
+    <img class="se" src="Edit.png">
+    <p><b>Edit Vedio</b></p>
+    <small>
+       Muntahi is Video Designer & Photo Designer and logos and Commercials 
+    </small>
+    </diiv>
+
+    <diiv class="sevices">
+        <img class="se" src="Hacker.png">
+        <p><b>Penetrating Lab </b></p>
+        <small>
+           A successful penetration laboratory with a certificate in dealing with Tremnal 
+        </small>
+        </diiv>
+     
+
+        <h2 class="">My Projects Work</h2>
+        <div class="projects">
+        <a href="https://muntahi045.github.io/Kalimoon/" ><img src="Working-rafiki.png" title="kali moon "></a>
+        <a href="https://muntahi045.github.io/VALHALA-/" ><img src="Working-rafiki.png" title="VALHALA"></a>
+        <a href="https://muntahi045.github.io/moonpaid/" ><img src="Working-rafiki.png" title="moonpaid"></a>
+        <a href="https://muntahi045.github.io/GitMoon/" ><img src="Working-rafiki.png" title="gitmoon"></a>
+        <a href="https://muntahi045.github.io/worldmoon/" ><img src="Working-rafiki.png" title="worldmoon"></a>
+        <a href="https://muntahi045.github.io/Muntahitalabat/ " ><img src="Working-rafiki.png" title="talb"></a>
+        <a href="http://muntahi.42web.io/?i=1" ><img src="Working-rafiki.png" title="Course"></a>
+        <a href="https://muntahi045.github.io/Course/" ><img src="Working-rafiki.png" title=" Course"></a>
+        <a href="https://muntahi045.github.io/Mytasks/" ><img src="Working-rafiki.png" title="taks"></a>
+        <a href="https://muntahi045.github.io/quran-al-karem/" ><img src="Working-rafiki.png" title="quran-al-karem"></a>
+        <a href="https://muntahi045.github.io/Muntahi-web-/"><img src="Working-rafiki.png" title="Muntahi web"></a>
+        </div>
+
+
+        <div class="formbox">
+          <h2>Contact me </h2>
+<form id="telegramForm">
+  <div class="input">
+    <input type="text" id="firstName" placeholder="enter first name">
+  </div>
+  <div class="input">
+    <input type="email" id="email" placeholder="enter email">
+  </div>
+  <center>
+    <div class="text"><br>
+      <textarea id="message" cols="24" rows="6"></textarea><br>
+      <button type="button" class="sub" onclick="sendMessageToTelegram()">Send Message</button>
+    </div>
+  </center>
+</form>
+        </div>
+<div class="foter">
+<br><br>
+<center>
+<img src="mail.png" width=40px height=40px height>
+<!---<img src="phone.png" width=40px height=40px height>--->
+</div>
+</center>
+<br><br>
+</div>
+<script type="text/javascript">
+
+function sendMessageToTelegram() {
+  const firstName = document.getElementById('firstName').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const botToken = '6035544684:AAE1QkNyTtE-mwdwdH5XPCmWkobQs0IzOqE';
+  const chatId = '5333239494';
+  const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+  const text = `Name: ${firstName}\nEmail: ${email}\nMessage: ${message}`;
+
+  fetch(telegramApiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: text,
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok) {
+       alert('Ok'); 
+    } else {
+      alert('Failed to send message. Please try again.');
+    }
+  })
+  .catch(error => {
+    console.error('Error sending message to Telegram:', error);
+    alert('An error occurred while sending the message. Please try again later.');
+  });
+}
+
+</script>
+
+
+
+<style type="text/css">
+
+* {
+padding :0px ;
+margin :0px ;
+box-sizing :border-box ;
+outline :none ;
+} 
+
+
+body {
+background-color :#F0F8FF ;
+}
+
+
+
+.profile {
+width :40%;
+float :right ;
+
+} 
+
+
+.profile img  {
+width:100% ;
+height: 100%;
+border-radius: 50% ;
+border: 2px dotted blue ; 
+
+} 
+
+
+.about  {
+margin-left: 15px;
+} 
+
+.profile-info {
+width: 60%;
+height: 100vh;
+float: left;
+padding: 0 30px;
+overflow: scroll;
+overflow-x: hidden;
+} 
+
+
+.profile-info::-webkit-scrollbar  {
+width: 0;
+} 
+
+.profile-info h1 {
+margin-top: 50px;
+margin-bottom: 50px;
+
+} 
+
+.sosh  {
+margin-top: 20px; 
+margin-left: 15px;
+} 
+
+
+
+.sosh img {
+width: 25px; 
+margin-right: 15px; 
+cursor: pointer; 
+transform: 2s;
+} 
+
+.sosh img:hover  {
+transform: rotate(360deg);
+transition: 2s;
+} 
+
+
+
+.profile-info h2 {
+margin-top: 50px;
+margin-bottom: 15px; 
+
+} 
+
+.sevices  {
+display: inline-block;
+width: 28%;
+padding: 30px 10px;
+margin: 2%;
+text-align: center;
+box-shadow: 0px 0px 15px rgba(37, 73, 214, 0.10);
+} 
+
+
+.sevices img {
+width: 60%; 
+margin: 5px;
+} 
+
+
+.sevices small  {
+padding-top: 15px;
+display: block;
+} 
+
+
+
+.projects  {
+
+} 
+
+
+.projects  img{
+width: 31%;
+padding: 4px;
+margin-bottom: 5px;
+margin-left: 3px;
+border: 1px solid gray;
+cursor: pointer;
+} 
+
+
+.formbox {
+margin-top: 30px;
+
+} 
+
+.input input{
+width: 45%;
+border: none;
+outline: none ;
+padding: 10px;
+background-color: rgba(240, 248, 255, 0.719);
+margin: 2%;
+display: inline-block;
+} 
+
+.text {
+width: 100%;
+border: none;
+outline: none ;
+background-color: rgba(240, 248, 255, 0.719);
+font-family: 'Nunito', sans-serif;
+} 
+
+.sub {
+border: none;
+outline: none ;
+padding: 10px;
+background-color: rgb(41, 102, 155);
+margin: 2%;
+font-weight: bold;
+color: white;
+cursor: pointer;
+} 
+
+
+@media only screen and (max-width:900px) {
+   .profile-info {
+   width: 95%;
+
+}
+
+.profile {
+   width: 95%;
+
+}
+
+.sevices {
+   width: 95%;
+   margin-bottom: 15px;
+}
+
+
+}
+
+
+.foter img{
+padding :10px ;
+
+} 
+
+
+
+.i {
+color :black ;
+
+} 
+
+
+
+</style>
+</body>
+</html>
